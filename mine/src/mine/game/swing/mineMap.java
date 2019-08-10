@@ -13,6 +13,12 @@ import mine.game.data.InnerPixel;
 import java.awt.BorderLayout;
 import java.awt.Color;
 
+/**
+ * Swing으로 그림 그려주기. 
+ * 
+ * @author top
+ *
+ */
 public class mineMap {
 
 	private BoardMap boardMap;
