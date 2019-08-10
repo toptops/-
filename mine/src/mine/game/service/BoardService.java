@@ -75,17 +75,6 @@ public class BoardService {
 		int check = 0;
 		
 		if(type == PixelType.back) {
-			for(InnerPixel pixel : innerBoardMap) {
-				if(check == 10) {
-					System.out.println();
-					check = 0;
-				}
-				if(pixel.getPixelNum() == -1) System.out.print("X "); 
-				else System.out.print(pixel.getPixelNum() + " ");
-
-				check++;
-			}
-		} else if(type == PixelType.Inner) {
 			for(BackPixel pixel : backBoardMap) {
 				if(check == 10) {
 					System.out.println();
@@ -93,6 +82,17 @@ public class BoardService {
 				}
 				
 				System.out.print(pixel.getBackPixelShape() + " ");
+
+				check++;
+			}
+		} else if(type == PixelType.Inner) {
+			for(InnerPixel pixel : innerBoardMap) {
+				if(check == 10) {
+					System.out.println();
+					check = 0;
+				}
+				if(pixel.getPixelNum() == -1) System.out.print("X "); 
+				else System.out.print(pixel.getPixelNum() + " ");
 
 				check++;
 			}

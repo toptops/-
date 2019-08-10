@@ -1,7 +1,10 @@
 package mine.game.main;
 
+import java.awt.EventQueue;
+
 import mine.game.PixelEnum.PixelType;
 import mine.game.service.BoardService;
+import mine.game.swing.mineMap;
 
 /**
  * 메인 화면.
@@ -16,11 +19,17 @@ public class MineMain {
 		boardService.setPersonalMinset(true, null);
 		boardService.init();
 		
-		boardService.printBoard(PixelType.back);
-		System.out.println();
-		System.out.println();
 		boardService.printBoard(PixelType.Inner);
 		
-		
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					mineMap window = new mineMap(boardService.getBoard());
+					window.frmMinedataprint.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
 	}
 }
