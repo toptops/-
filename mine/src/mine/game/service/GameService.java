@@ -1,17 +1,18 @@
 package mine.game.service;
 
-import java.util.ArrayList;
+import mine.game.data.BoardMap;
 
-import mine.game.data.Board;
-import mine.game.data.InnerPixel;
-
+/**
+ * 게임을 만들게 되면 게임 룰에 대한 서비스.
+ * 미구현.
+ * 
+ * @author top
+ *
+ */
 public class GameService {
-	public boolean checkingMine(int x, int y, Board board) {
+	public boolean checkingMine(int x, int y, BoardMap board) {
 		boolean checkMine = false;
-		
-//		for()
-		
-		
+
 		return checkMine;
 	}
 }

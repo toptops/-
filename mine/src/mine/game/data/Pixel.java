@@ -2,6 +2,13 @@ package mine.game.data;
 
 import mine.game.PixelEnum.PixelType;
 
+/**
+ * 기본 픽셀 타입을 나타낸다.
+ * 좌표 X, Y와 Type이 있다.
+ * 
+ * @author top
+ *
+ */
 public abstract class Pixel {
 	private int x;
 	private int y;

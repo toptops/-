@@ -2,6 +2,15 @@ package mine.game.data;
 
 import mine.game.PixelEnum.PixelType;
 
+/**
+ * 사각형에 숫자, 지뢰를 관리하는 객체
+ * pixeLNum ( 픽셀 타입 내부 숫자 )
+ * isMine ( 지뢰인지 구분 )
+ * 각 픽셀 타입에 대한 숫자와 지뢰를 관리한다. 
+ * 
+ * 특이사항은 직접 pixelNum을 더해주는 메소드가 있다.
+ * 
+ */
 public class InnerPixel extends Pixel{
 	private int pixelNum;
 	private boolean isMine;
@@ -12,6 +21,10 @@ public class InnerPixel extends Pixel{
 		this.isMine = false;
 	}
 	
+	/**
+	 * 픽셀 값을 1 더한다.
+	 * 
+	 */
 	public void addPixel() {
 		this.pixelNum++;
 	}
