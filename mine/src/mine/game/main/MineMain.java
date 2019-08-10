@@ -16,15 +16,14 @@ import mine.game.swing.mineMap;
 public class MineMain {
 	public static void main(String[] args) {
 		BoardService boardService = new BoardService();
-		boardService.setPersonalMinset(true, null);
+		boardService.setPersonalMinset(true, null, 0);
 		boardService.init();
-		
 		boardService.printBoard(PixelType.Inner);
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					mineMap window = new mineMap(boardService.getBoard());
+					mineMap window = new mineMap(boardService);
 					window.frmMinedataprint.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();

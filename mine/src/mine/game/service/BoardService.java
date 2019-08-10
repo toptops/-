@@ -17,18 +17,14 @@ import mine.game.utill.Utill;
  * @author top
  *
  */
-public class BoardService {
+public class BoardService{
 	private BoardMap board;
 	private ArrayList<InnerPixel> innerBoardMap;
 	private ArrayList<BackPixel> backBoardMap;
 	private ArrayList<Pixel> mainBoardMap;
 	
 	// 지뢰찾기에서 지뢰의 위치를 나타내는 배열
-	int[] minesLoc; 
-	
-	public BoardService() {
-		this.board = new BoardMap();
-	}
+	int[] minesLoc;
 	
 	/**
 	 * 보드를 초기화하는 메소드.
@@ -36,9 +32,10 @@ public class BoardService {
 	 * 
 	 */
 	public void init() {
-		innerBoardMap = this.board.getInnerBoardMap();
-		backBoardMap = this.board.getBackBoardMap();
-		mainBoardMap = this.board.getMainBoardMap();
+		this.board = new BoardMap();
+		this.innerBoardMap = this.board.getInnerBoardMap();
+		this.backBoardMap = this.board.getBackBoardMap();
+		this.mainBoardMap = this.board.getMainBoardMap();
 		
 		pixelInnerBoardInit();
 		pixelBackBoardInit();
@@ -55,9 +52,13 @@ public class BoardService {
 	 * @param isRandom
 	 * @param minesLoc
 	 */
-	public void setPersonalMinset(boolean isRandom, int[] minesLoc) {
+	public void setPersonalMinset(boolean isRandom, int[] minesLoc, int randomMineCount) {
 		if(isRandom) {
-			this.minesLoc = Utill.getRandomNums(10, 100);
+			if(randomMineCount > 0 && randomMineCount < 100)
+				this.minesLoc = Utill.getRandomNums(randomMineCount, 100);
+			else
+				this.minesLoc = Utill.getRandomNums(10, 100);
+				
 		}else {
 			if(minesLoc.length > 1 && minesLoc.length < 100) {
 				this.minesLoc = Arrays.copyOf(minesLoc, minesLoc.length);
@@ -80,9 +81,7 @@ public class BoardService {
 					System.out.println();
 					check = 0;
 				}
-				
 				System.out.print(pixel.getBackPixelShape() + " ");
-
 				check++;
 			}
 		} else if(type == PixelType.Inner) {
