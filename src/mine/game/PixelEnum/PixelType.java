@@ -1,9 +1,9 @@
 package mine.game.PixelEnum;
 
 /**
- * Pixel TypeÀ» ÁöÁ¤ÇÏ´Â Enum
- * Inner ( Å¸ÀÏÀÇ µ¥ÀÌÅÍ )
- * back ( Å¸ÀÏÀÇ ¹è°æ ) 
+ * Pixel Typeì„ ì§€ì •í•˜ëŠ” Enum
+ * Inner ( íƒ€ì¼ì˜ ë°ì´í„° )
+ * back ( íƒ€ì¼ì˜ ë°°ê²½ ) 
  * 
  * @author top
  *

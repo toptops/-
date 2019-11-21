@@ -7,8 +7,8 @@ import mine.game.service.BoardService;
 import mine.game.swing.mineMap;
 
 /**
- * ¸ŞÀÎ È­¸é.
- * ÇÈ¼¿À» ÃÊ±âÈ­ÇÏ°í È­¸éÀ» ¶ç¿öÁØ´Ù.
+ * ë©”ì¸ í™”ë©´.
+ * í”½ì…€ì„ ì´ˆê¸°í™”í•˜ê³  í™”ë©´ì„ ë„ì›Œì¤€ë‹¤.
  * 
  * @author top
  *

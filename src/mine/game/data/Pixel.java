@@ -3,8 +3,8 @@ package mine.game.data;
 import mine.game.PixelEnum.PixelType;
 
 /**
- * ±âº» ÇÈ¼¿ Å¸ÀÔÀ» ³ªÅ¸³½´Ù.
- * ÁÂÇ¥ X, Y¿Í TypeÀÌ ÀÖ´Ù.
+ * ê¸°ë³¸ í”½ì…€ íƒ€ì…ì„ ë‚˜íƒ€ë‚¸ë‹¤.
+ * ì¢Œí‘œ X, Yì™€ Typeì´ ìˆë‹¤.
  * 
  * @author top
  *

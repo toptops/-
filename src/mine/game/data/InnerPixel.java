@@ -3,12 +3,12 @@ package mine.game.data;
 import mine.game.PixelEnum.PixelType;
 
 /**
- * »ç°¢Çü¿¡ ¼ýÀÚ, Áö·Ú¸¦ °ü¸®ÇÏ´Â °´Ã¼
- * pixeLNum ( ÇÈ¼¿ Å¸ÀÔ ³»ºÎ ¼ýÀÚ )
- * isMine ( Áö·ÚÀÎÁö ±¸ºÐ )
- * °¢ ÇÈ¼¿ Å¸ÀÔ¿¡ ´ëÇÑ ¼ýÀÚ¿Í Áö·Ú¸¦ °ü¸®ÇÑ´Ù. 
+ * ì‚¬ê°í˜•ì— ìˆ«ìž, ì§€ë¢°ë¥¼ ê´€ë¦¬í•˜ëŠ” ê°ì²´
+ * pixeLNum ( í”½ì…€ íƒ€ìž… ë‚´ë¶€ ìˆ«ìž )
+ * isMine ( ì§€ë¢°ì¸ì§€ êµ¬ë¶„ )
+ * ê° í”½ì…€ íƒ€ìž…ì— ëŒ€í•œ ìˆ«ìžì™€ ì§€ë¢°ë¥¼ ê´€ë¦¬í•œë‹¤. 
  * 
- * Æ¯ÀÌ»çÇ×Àº Á÷Á¢ pixelNumÀ» ´õÇØÁÖ´Â ¸Þ¼Òµå°¡ ÀÖ´Ù.
+ * íŠ¹ì´ì‚¬í•­ì€ ì§ì ‘ pixelNumì„ ë”í•´ì£¼ëŠ” ë©”ì†Œë“œê°€ ìžˆë‹¤.
  * 
  */
 public class InnerPixel extends Pixel{
@@ -22,7 +22,7 @@ public class InnerPixel extends Pixel{
 	}
 	
 	/**
-	 * ÇÈ¼¿ °ªÀ» 1 ´õÇÑ´Ù.
+	 * ï¿½È¼ï¿½ ï¿½ï¿½ï¿½ï¿½ 1 ï¿½ï¿½ï¿½Ñ´ï¿½.
 	 * 
 	 */
 	public void addPixel() {

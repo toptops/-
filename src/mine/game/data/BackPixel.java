@@ -3,10 +3,10 @@ package mine.game.data;
 import mine.game.PixelEnum.PixelType;
 
 /**
- * °ÔÀÓ »ó¿¡¼­ ±×¸²À» °ü¸®ÇÏ´Â °´Ã¼
- * Pixel °´Ã¼¸¦ »ó¼Ó¹Þ¾Æ¼­ X,Y À§Ä¡ ¹× ÇÈ¼¿ Å¸ÀÔÀ» °¡Áö°í ÀÖ´Ù.
- * ÇØ´ç °´Ã¼¿¡¼­´Â ±×¸² ¹× ¸ð¾çÀ» ¼³Á¤ÇÏµµ·Ï ¸¸µç Pixel
- * ÃÊ±âÈ­½Ã ÀÌ °´Ã¼°¡ MainBoard¿¡ µé¾î°£´Ù.
+ * ê²Œìž„ ìƒì—ì„œ ê·¸ë¦¼ì„ ê´€ë¦¬í•˜ëŠ” ê°ì²´
+ * Pixel ê°ì²´ë¥¼ ìƒì†ë°›ì•„ì„œ X,Y ìœ„ì¹˜ ë° í”½ì…€ íƒ€ìž…ì„ ê°€ì§€ê³  ìžˆë‹¤.
+ * í•´ë‹¹ ê°ì²´ì—ì„œëŠ” ê·¸ë¦¼ ë° ëª¨ì–‘ì„ ì„¤ì •í•˜ë„ë¡ ë§Œë“  Pixel
+ * ì´ˆê¸°í™”ì‹œ ì´ ê°ì²´ê°€ MainBoardì— ë“¤ì–´ê°„ë‹¤.
  * 
  * @author top
  *

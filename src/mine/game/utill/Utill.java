@@ -4,24 +4,24 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * ±âÅ¸ ²À ÇÊ¿äÇÏÁö ¾Ê´Â °´Ã¼µéÀÇ ÁıÇÕ. 
+ * ê¸°íƒ€ ê¼­ í•„ìš”í•˜ì§€ ì•ŠëŠ” ê°ì²´ë“¤ì˜ ì§‘í•©. 
  * 
  * @author top
  *
  */
 public class Utill {
-	public static final boolean thisMine = true;			// Áö·Ú´Ù.
-	public static final boolean unThisMine = false;			// Áö·Ú°¡ ¾Æ´Ï´Ù.
+	public static final boolean thisMine = true;			// ì§€ë¢°ë‹¤.
+	public static final boolean unThisMine = false;			// ì§€ë¢°ê°€ ì•„ë‹ˆë‹¤.
 	
 	/**
-	 * 8¹æ Å¸ÀÏÀ» ºñ±³ÇÒ intÇü 2Â÷¹è¿­
+	 * 8ë°© íƒ€ì¼ì„ ë¹„êµí•  intí˜• 2ì°¨ë°°ì—´
 	 * (-1,-1) (-1,0) (-1,1)
-	 * (0, -1) (  °ª  ) (0,1)
+	 * (0, -1) (  ê°’  ) (0,1)
 	 * (1, -1) (1, 0) (1,1)
 	 */
 	public static final int[][] arroudMineNumSetBoard = { {-1,-1}, {-1,0}, {-1,1}, {0,-1}, {0,1}, {1,-1}, {1,0}, {1,1} }; 
 	
-	// ·£´ı Áö·Ú¸¦ »ç¿ë½Ã »ç¿ëÇÔ ·£´ı ÇÔ¼ö.
+	// ëœë¤ ì§€ë¢°ë¥¼ ì‚¬ìš©ì‹œ ì‚¬ìš©í•¨ ëœë¤ í•¨ìˆ˜.
 	public static int[] getRandomNums(int count, int range) {
 		int nums[] = new int[count];
 		

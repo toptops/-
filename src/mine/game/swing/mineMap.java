@@ -1,29 +1,21 @@
 package mine.game.swing;
 
-import java.awt.EventQueue;
-import java.awt.Rectangle;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JButton;
-import net.miginfocom.swing.MigLayout;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import mine.game.data.BoardMap;
 import mine.game.data.InnerPixel;
 import mine.game.service.BoardService;
-
-import java.awt.BorderLayout;
-import java.awt.Color;
-import javax.swing.SwingConstants;
+import net.miginfocom.swing.MigLayout;
 
 /**
- * SwingÀ¸·Î ±×¸² ±×·ÁÁÖ±â. 
+ * Swingìœ¼ë¡œ ê·¸ë¦¼ ê·¸ë ¤ì£¼ê¸°.  
  * 
  * @author top
  *
@@ -69,7 +61,7 @@ public class mineMap {
 		button2.setBounds(14, 137, 113, 27);
 		panel_1.add(button2);
 		button2.setBackground(Color.PINK);
-		button2.setText("Áö·Ú ÃÊ±âÈ­ ");
+		button2.setText("ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ ");
 		
 		textField1 = new JTextField();
 		textField1.setLocation(14, 101);
@@ -81,12 +73,12 @@ public class mineMap {
 		button.setBounds(30, 32, 75, 27);
 		panel_1.add(button);
 		button.setBackground(Color.PINK);
-		button.setText("ÃÊ±âÈ­");
+		button.setText("ï¿½Ê±ï¿½È­");
 		
 		JLabel label1 = new JLabel();
 		label1.setBounds(0, 76, 148, 18);
 		panel_1.add(label1);
-		label1.setText("1~99¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		label1.setText("1~99ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½");
 		button.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -112,7 +104,7 @@ public class mineMap {
 	}
 	
 	/**
-	 * panelÀ» ¹Þ¾Æ¼­ Button(ÇÈ¼¿)À» 100°³ »ý¼ºÇÏ¿© °¢°¢ÀÇ Button¿Í InnerBoardMap(µ¥ÀÌÅÍ)¸ÅÇÎ½ÃÅ²´Ù.
+	 * panelï¿½ï¿½ ï¿½Þ¾Æ¼ï¿½ Button(ï¿½È¼ï¿½)ï¿½ï¿½ 100ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Buttonï¿½ï¿½ InnerBoardMap(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½Î½ï¿½Å²ï¿½ï¿½.
 	 * 
 	 * @param panel
 	 */
